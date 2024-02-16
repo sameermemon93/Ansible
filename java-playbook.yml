@@ -1,0 +1,8 @@
+---
+- name: Install Java
+  hosts: all
+  become: true
+  
+  -tasks:
+    - name: Install Java
+      apt: apt install jdk-11-jre
