@@ -3,6 +3,8 @@
   hosts: all
   become: true
   
-  -tasks:
+  tasks:
     - name: Install Java
-      apt: apt install jdk-11-jre
+      apt: 
+        name: openjdk-11-jre
+        state: present
